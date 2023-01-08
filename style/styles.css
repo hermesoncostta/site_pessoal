@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,900;1,300;1,900&display=swap');
+
+
+:root {
+    --primary: #63ebbe;
+    --secundary: #000044;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container img {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+.container strong {
+    color: var(--secundary);
+    background-color: var(--primary);
+    padding: 1px 10px;
+}
+
+.container h1 {
+    position: absolute;
+    z-index: 5;
+    font-size: 50px;
+    color: white;
+}
+
+.container a {
+    position: absolute;
+    z-index: 6;
+    background: var(--primary);
+    padding: 10px 30px;
+    text-decoration: none;
+    color: var(--secundary);
+    border-radius: 30px;
+    margin-top: 20%;
+    font-weight: bold;
+}
+
+.container a:hover {
+    background: #baffa3;
+}
+
+.overlay {
+    background: var(--secundary);
+    width: 100%;
+    height: 100%;
+    opacity: .8;
+    position: absolute;
+}
+
+
+
+/* Section Sobre */
+.sobre {
+    display: flex;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.sobre-text {
+    display: flex;
+    justify-content: center;
+    text-align: left;
+    flex-direction: column;
+    display: flex;
+    width: 50%;
+    align-items: start;
+    margin-left: 50px;
+
+}
+
+.sobre-text h2 {
+    font-size: 30px;
+    color: var(--secundary);
+    text-align: start;
+}
+
+.sobre-text p {
+    max-width: 90%;
+    font-size: 20px;
+    margin-top: 2%;
+}
+
+.sobre-image {
+    display: flex;
+    width: 50%;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.sobre-image img {
+    height: 100%;
+    width: 350px;
+}
+
+
+/* End Section Sobre */
+
+
+
+
+/* Section Servicos */
+
+.servicos {
+    display: flex;
+    background: var(--secundary);
+    flex-direction: column;
+    padding-bottom: 100px;
+}
+
+.servicos h2 {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    margin-top: 2%;
+}
+
+.servicos-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.card {
+    color: var(--secundary);
+    background-color: white;
+    width: 350px;
+    height: 150px;
+    border-radius: 20px;
+    margin-top: 5%;
+    text-align: center;
+    align-items: center;
+
+}
+
+.card-container {
+    margin-top: 10%;
+
+}
+
+.card-container h3 {
+    margin-top: 5%;
+
+}
+
+
+
+/* End Section Servicos */
+
+
+/* Section Contato */
+
+.contato {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.contato h2{
+    font-size: 40px;
+    color: var(--secundary);
+}
+.contato-container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--secundary);
+    height: 500px;
+    width: 50%;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    margin-top: 5%;
+}
+
+.forms {
+    margin-top: 10%;
+    
+}
+
+input {
+    padding: 13px 20px;
+    padding-left: 10px;
+    height: 20px;
+    width: 100%;
+    font-weight: 500;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: 0.5px;
+    outline: none;
+    color: #c4c3ca;
+    background-color: #030325;
+    border: none;
+    -webkit-transition: all 200ms linear;
+    transition: all 200ms linear;
+    box-shadow: 0 4px 8px 0 rgba(21, 21, 21, .2);
+    margin-top: 5%;
+    border-radius: 10px;
+}
+
+input[type=text]{
+    height: 100px;
+}
+
+input:focus,
+input:active {
+  border: none;
+  outline: none;
+  box-shadow: 0 4px 8px 0 var(--primary);
+}
+
+.contato-container button{
+    margin-top: 10%;
+    background-color: var(--primary);
+    color: var(--secundary);
+    padding: 10px 30px;
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    border-style: none;
+    border-radius: 30px;
+}
+
+
+/* End Section Contato */
+
+
+
+
+/* Footer Section */
+
+footer{
+    background-color: var(--secundary);
+    color:silver;
+    justify-content: space-around;
+    display: flex;
+    height: 100px;
+    align-items: center;
+}
+
+footer p{
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-align: start;
+}
+
+.social-media{
+    display: flex;
+    width: 10%;
+    justify-content: space-around;
+}
