@@ -14,6 +14,13 @@
 
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
+
+
+
 .container {
     display: flex;
     justify-content: center;
@@ -81,7 +88,7 @@
     display: flex;
     width: 50%;
     align-items: start;
-    margin-left: 50px;
+    margin-left: 100px;
 
 }
 
@@ -101,13 +108,13 @@
     display: flex;
     width: 50%;
     align-items: center;
-    justify-content: center;
+    justify-content: end;
 
 }
 
 .sobre-image img {
     height: 100%;
-    width: 350px;
+    width: 500px;
 }
 
 
@@ -127,7 +134,7 @@
 
 .servicos h2 {
     color: white;
-    font-size: 30px;
+    font-size: 40px;
     text-align: center;
     margin-top: 2%;
 }
@@ -164,6 +171,47 @@
 
 /* End Section Servicos */
 
+
+
+
+/* Section Skils */
+
+.skil-section{
+    display: flex;
+    background-color: var(--primary);
+    flex-direction: column;
+
+}
+
+.skil-section h2{
+    font-size: 40px;
+    color: var(--secundary);
+    text-align: center;
+    margin-top: 5%;
+}
+
+.skils{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+   
+    padding: 100px 0px;
+}
+
+
+.tecnologias{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-weight: bold;
+    color: var(--secundary);
+}
+
+
+
+/* End Section Skils */
 
 /* Section Contato */
 
@@ -241,8 +289,13 @@ input:active {
     font-weight: bold;
     border-style: none;
     border-radius: 30px;
+    cursor: pointer;
 }
 
+.contato-container small{
+    margin-top: 20px;
+    color: silver;
+}
 
 /* End Section Contato */
 
@@ -252,7 +305,7 @@ input:active {
 /* Footer Section */
 
 footer{
-    background-color: var(--secundary);
+    background-color: #212121;
     color:silver;
     justify-content: space-around;
     display: flex;
