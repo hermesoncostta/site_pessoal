@@ -14,7 +14,7 @@
 
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -176,31 +176,31 @@ html{
 
 /* Section Skils */
 
-.skil-section{
+.skil-section {
     display: flex;
     background-color: var(--primary);
     flex-direction: column;
 
 }
 
-.skil-section h2{
+.skil-section h2 {
     font-size: 40px;
     color: var(--secundary);
     text-align: center;
     margin-top: 5%;
 }
 
-.skils{
+.skils {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 
-   
+
     padding: 100px 0px;
 }
 
 
-.tecnologias{
+.tecnologias {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -224,10 +224,11 @@ html{
     margin-bottom: 100px;
 }
 
-.contato h2{
+.contato h2 {
     font-size: 40px;
     color: var(--secundary);
 }
+
 .contato-container {
     display: flex;
     flex-direction: column;
@@ -243,7 +244,7 @@ html{
 
 .forms {
     margin-top: 10%;
-    
+
 }
 
 input {
@@ -267,18 +268,18 @@ input {
     border-radius: 10px;
 }
 
-input[type=text]{
+input[type=text] {
     height: 100px;
 }
 
 input:focus,
 input:active {
-  border: none;
-  outline: none;
-  box-shadow: 0 4px 8px 0 var(--primary);
+    border: none;
+    outline: none;
+    box-shadow: 0 4px 8px 0 var(--primary);
 }
 
-.contato-container button{
+.contato-container button {
     margin-top: 10%;
     background-color: var(--primary);
     color: var(--secundary);
@@ -292,7 +293,7 @@ input:active {
     cursor: pointer;
 }
 
-.contato-container small{
+.contato-container small {
     margin-top: 20px;
     color: silver;
 }
@@ -304,23 +305,728 @@ input:active {
 
 /* Footer Section */
 
-footer{
+footer {
     background-color: #212121;
-    color:silver;
+    color: silver;
     justify-content: space-around;
     display: flex;
     height: 100px;
     align-items: center;
 }
 
-footer p{
+footer p {
     font-size: 14px;
     letter-spacing: 1px;
     text-align: start;
 }
 
-.social-media{
+.social-media {
     display: flex;
     width: 10%;
     justify-content: space-around;
+}
+
+
+@media (max-width: 1024px) {
+    *{
+     margin: 0;
+     padding: 0;
+    }
+    
+     
+ 
+     .container {
+         width: 100%;
+         flex-direction: column;
+     }
+     .container h1 {
+         width: 90%;
+         font-size: 30px;
+         line-height: 40px;
+         text-align: center;
+         
+     }
+ 
+ 
+     .container img {
+         width: 100%;
+         height:700px;
+     }
+    
+     .container a {
+         width: 50%;
+         margin-top: 30%;
+         text-align: center;
+     }
+     
+     .overlay {
+         width: 100%;
+         position: relative;
+ 
+     }
+     
+ 
+     .sobre {
+         justify-content: center;
+     }
+ 
+     .sobre h2{
+         font-size:40px;
+     }
+ 
+ 
+     .sobre-text{
+         width: 90%;
+         margin-left: 10%;
+         justify-content: center;
+         display: flex;
+     }
+     .sobre-text p{
+         margin-top: 10%;
+         font-size: 24px;
+ 
+     }
+ 
+     .sobre-image {
+         width: 100%;
+       height: 100%;
+         justify-content: end;
+         margin-top: 10%;
+     
+     }
+ 
+ 
+ 
+ 
+ 
+     .servicos {
+         flex-direction: column;
+         align-items: center;
+         justify-content: center;
+ 
+     }
+     
+     .servicos h2 {
+         font-size: 40px;
+         text-align: center;
+         margin-top: 5%;
+     }
+     
+     .servicos-container {
+         
+         justify-content: center;
+         gap: 50px;
+         
+     }
+     
+     .card {
+         width: 300px;
+        margin-top: 10%;
+         align-items: center;
+         justify-content: center;
+     
+     }
+     
+     .card-container {
+         margin-top: 10%;
+     
+     }
+     
+     .card-container h3 {
+         margin-top: 5%;
+     
+     }
+     
+ 
+ 
+ 
+ 
+     .skil-section {
+       
+         flex-direction: column;
+     
+     }
+     
+     .skil-section h2 {
+         font-size: 35px;
+         text-align: center;
+         
+     }
+     
+     .skils {
+        justify-content: center;
+        gap: 50px;
+         
+     }
+     
+     
+     .tecnologias {
+         flex-direction: column;
+         text-align: center;
+         margin-top: 0;
+     }
+     
+ 
+ 
+ 
+ 
+ 
+     .contato {
+         justify-content: center;
+         margin-top: 5%;
+         flex-direction: column;
+         align-items: center;
+         width: 100%;
+     }
+     
+     .contato h2 {
+         font-size: 35px;
+         
+     }
+     
+     .contato-container {
+         flex-direction: column;
+         height: 500px;
+         width: 70%;
+         border-radius: 20px;
+         justify-content: center;
+         align-items: center;
+         color: white;
+       
+     }
+     
+     .forms {
+         margin-top: 5%;
+         justify-content: center;
+         align-items: center;
+        
+     }
+ 
+     .contato-container{
+         justify-content: center;
+         align-items: center;
+         display: flex;
+         text-align: center;
+         margin-top: 5%;
+     }
+     
+     
+     .contato-container h3{
+         margin-top: 2%;
+     }
+     
+     label{
+         justify-content: left;
+         margin-top: 5%;
+     }
+ 
+     input {
+         justify-content: center;
+        width: 100%;
+        align-items: center;
+        width: 100%;
+     }
+     
+     
+     
+     .contato-container button {
+        
+         width: 90%;
+     }
+     
+     .contato-container small {
+         margin-top: 20px;
+         color: silver;
+     }
+ 
+ 
+ 
+ 
+ 
+ 
+     footer {
+         flex-direction: column;
+         width: 100%;
+     }
+     
+     footer p {
+         font-size: 14px;
+         letter-spacing: 1px;
+         text-align: start;
+     }
+     
+     .social-media {
+         width: 20%;
+        
+     }
+ 
+    
+ }
+
+
+
+
+
+ 
+@media (max-width: 768px) {
+   *{
+    margin: 0;
+    padding: 0;
+   }
+   
+    
+
+    .container {
+        width: 100%;
+        flex-direction: column;
+    }
+    .container h1 {
+        width: 90%;
+        font-size: 30px;
+        line-height: 40px;
+        text-align: center;
+        
+    }
+
+
+    .container img {
+        width: 100%;
+        height:700px;
+    }
+   
+    .container a {
+        width: 50%;
+        margin-top: 80%;
+    }
+    
+    .overlay {
+        width: 100%;
+        position: relative;
+
+    }
+    
+
+    .sobre {
+        flex-direction: column;
+    }
+
+    .sobre h2{
+        font-size:40px;
+    }
+
+
+    .sobre-text{
+        width: 90%;
+        margin-left: 10%;
+        justify-content: center;
+        display: flex;
+    }
+    .sobre-text p{
+        margin-top: 10%;
+        font-size: 24px;
+
+    }
+
+    .sobre-image {
+        width: 100%;
+      height: 100%;
+        justify-content: end;
+        margin-top: 10%;
+    
+    }
+
+
+
+
+
+    .servicos {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+    
+    .servicos h2 {
+        font-size: 40px;
+        text-align: center;
+        margin-top: 5%;
+    }
+    
+    .servicos-container {
+        
+        flex-direction: column;
+        
+    }
+    
+    .card {
+        width: 300px;
+       margin-top: 10%;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    
+    .card-container {
+        margin-top: 10%;
+    
+    }
+    
+    .card-container h3 {
+        margin-top: 5%;
+    
+    }
+    
+
+
+
+
+    .skil-section {
+      
+        flex-direction: column;
+    
+    }
+    
+    .skil-section h2 {
+        font-size: 35px;
+        text-align: center;
+        
+    }
+    
+    .skils {
+        flex-direction: column;
+        
+    }
+    
+    
+    .tecnologias {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 0;
+    }
+    
+
+
+
+
+
+    .contato {
+        justify-content: center;
+        margin-top: 5%;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .contato h2 {
+        font-size: 35px;
+        
+    }
+    
+    .contato-container {
+        flex-direction: column;
+        height: 500px;
+        width: 90%;
+        border-radius: 20px;
+        justify-content: center;
+        align-items: center;
+        color: white;
+      
+    }
+    
+    .forms {
+        margin-top: 5%;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .contato-container{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        text-align: center;
+        margin-top: 5%;
+    }
+    
+    
+    .contato-container h3{
+        margin-top: 2%;
+    }
+    
+    label{
+        justify-content: left;
+        margin-top: 5%;
+    }
+
+    input {
+        justify-content: center;
+       width: 70%;
+       align-items: center;
+    }
+    
+    
+    
+    .contato-container button {
+       
+        width: 90%;
+    }
+    
+    .contato-container small {
+        margin-top: 20px;
+        color: silver;
+    }
+
+
+
+
+
+
+    footer {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    footer p {
+        font-size: 14px;
+        letter-spacing: 1px;
+        text-align: start;
+    }
+    
+    .social-media {
+        width: 50%;
+       
+    }
+
+   
+}
+@media (max-width: 480px) {
+   *{
+    margin: 0;
+    padding: 0;
+   }
+   
+    
+
+    .container {
+        width: 100%;
+        flex-direction: column;
+    }
+    .container h1 {
+        width: 90%;
+        font-size: 30px;
+        line-height: 40px;
+        text-align: center;
+        
+    }
+
+
+    .container img {
+        width: 100%;
+        height:500px;
+    }
+   
+    .container a {
+        width: 50%;
+        margin-top: 80%;
+    }
+    
+    .overlay {
+        width: 100%;
+        position: relative;
+
+    }
+    
+
+    .sobre {
+        flex-direction: column;
+    }
+
+    .sobre h2{
+        font-size:40px;
+    }
+
+
+    .sobre-text{
+        width: 90%;
+        margin-left: 10%;
+        justify-content: center;
+        display: flex;
+    }
+    .sobre-text p{
+        margin-top: 10%;
+        font-size: 24px;
+
+    }
+
+    .sobre-image {
+        width: 100%;
+      height: 400px;
+        justify-content: end;
+        margin-top: 10%;
+    
+    }
+
+
+
+
+
+    .servicos {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+    
+    .servicos h2 {
+        font-size: 40px;
+        text-align: center;
+        margin-top: 5%;
+    }
+    
+    .servicos-container {
+        
+        flex-direction: column;
+        
+    }
+    
+    .card {
+        width: 300px;
+       margin-top: 10%;
+        align-items: center;
+        justify-content: center;
+    
+    }
+    
+    .card-container {
+        margin-top: 10%;
+    
+    }
+    
+    .card-container h3 {
+        margin-top: 5%;
+    
+    }
+    
+
+
+
+
+    .skil-section {
+      
+        flex-direction: column;
+    
+    }
+    
+    .skil-section h2 {
+        font-size: 35px;
+        text-align: center;
+        
+    }
+    
+    .skils {
+        flex-direction: column;
+        
+    }
+    
+    
+    .tecnologias {
+        flex-direction: column;
+        text-align: center;
+        margin-top: 0;
+    }
+    
+
+
+
+
+
+    .contato {
+        justify-content: center;
+        margin-top: 5%;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .contato h2 {
+        font-size: 35px;
+        
+    }
+    
+    .contato-container {
+        flex-direction: column;
+        height: 500px;
+        width: 90%;
+        border-radius: 20px;
+        justify-content: center;
+        align-items: center;
+        color: white;
+      
+    }
+    
+    .forms {
+        margin-top: 5%;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .contato-container{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        text-align: center;
+        margin-top: 5%;
+    }
+    
+    
+    .contato-container h3{
+        margin-top: 2%;
+    }
+    
+    label{
+        justify-content: left;
+        margin-top: 5%;
+    }
+
+    input {
+        justify-content: center;
+       width: 70%;
+       align-items: center;
+    }
+    
+    
+    
+    .contato-container button {
+       
+        width: 90%;
+    }
+    
+    .contato-container small {
+        margin-top: 20px;
+        color: silver;
+    }
+
+
+
+
+
+
+    footer {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    footer p {
+        font-size: 14px;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+    
+    .social-media {
+        width: 50%;
+       
+    }
+
+   
 }
