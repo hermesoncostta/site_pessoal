@@ -1,196 +1,69 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="style/styles.css" rel="stylesheet">
-
-
-    <title>Hermeson Costta</title>
+    <title>Desenvolvedor Android</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
 </head>
-
 <body>
-    <!-- Hero Section -->
-    <div class="container">
-        <h1>O <strong>PROGRAMADOR</strong> QUE VOCÊ PRECISA<br>PARA O PROJETO QUE VOCÊ SONHA.</h1>
-        <a href="#contato">ENTRAR EM CONTATO</a>
-        <img src="assets/background.jpg">
-        <div class="overlay"></div>
-    </div>
-    <!-- End Hero Section -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#portfolio">Portfólio</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
-
-    <!-- Section Sobre -->
-
-    <div class="sobre">
-        <div class="sobre-text">
-            <h2>Quem sou eu?</h2>
-            <p>Meu nome é Hermeson Costta, sou desenvolvedor web frontend.
-                Estou cursando Engenharia de Software e trabalho criando projetos freelancer.
-                Tenho experiência em construir sites, web apps, aplicações, landing pages. Já realizei projetos
-                diversos como:
-                E-commerce, Aplicativo de agendamentos, Sites Institucionais etc.
-
-            </p>
-        </div>
-
-        <div class="sobre-image">
-            <img src="assets/BANNER.png">
-        </div>
-    </div>
-
-    <!-- End Section Sobre -->
-
-
-    <!-- Section Serviços -->
-
-    <div class="servicos">
-        <h2>Meus Serviços</h2>
-        <div class="servicos-container">
-            <div class="card">
-                <div class="card-container">
-                    <span style="font-size: 3em; color: var(--secundary);">
-                        <i class="fa-solid fa-code"></i>
-                    </span>
-                    <h3>SITES</h3>
+    <section id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1>Transforme suas ideias em aplicativos Android poderosos.</h1>
+                    <p>Sou Especializado em Criar Soluções Inovadoras!</p>
+                    <a href="#contact" class="btn">Entrar em contato</a>
                 </div>
-            </div>
-            <div class="card">
-                <div class="card-container">
-                    <span style="font-size: 3em; color: var(--secundary);">
-                        <i class="fa-solid fa-file-code"></i>
-                    </span>
-                    <h3>SISTEMAS WEB</h3>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-container">
-                    <span style="font-size: 3em; color: var(--secundary);">
-                        <i class="fa-sharp fa-solid fa-rocket"></i>
-                    </span>
-                    <h3>LANDING PAGES</h3>
+                <div class="hero-image">
+                    <img src="assets/81685.png" alt="Imagem Hero">
                 </div>
             </div>
         </div>
+    </section>
 
-
-    </div>
-
-    <!-- End Section Serviços -->
-
-
-    <!-- Section Projetos -->
-
-    <div class="skil-section">
-        <h2>Tecnologias que utilizo</h2>
-        <div class="skils">
-
-            <div class="tecnologias">
-                <span style="font-size: 7em; color: var(--secundary);">
-                    <i class="fa-brands fa-react"></i>
-                </span>
-                <small>REACT</small>
-            </div>
-            <div  class="tecnologias">
-                <span style="font-size: 7em; color: var(--secundary);">
-
-                    <i class="fa-brands fa-square-js"></i>
-                </span>
-                <small>JAVASCRIPT</small>
-            </div>
-            <div  class="tecnologias">
-                <span style="font-size: 7em; color: var(--secundary);">
-                    <i class="fa-brands fa-html5"></i>
-
-                </span>
-                <small>HTML5</small>
-            </div>
-            <div  class="tecnologias">
-                <span style="font-size: 7em; color: var(--secundary);">
-                    <i class="fa-brands fa-css3-alt"></i>
-                </span>
-                <small>CSS3</small>
-
-            </div>
-            <div  class="tecnologias"> <span style="font-size: 7em; color: var(--secundary);">
-                    <i class="fa-brands fa-node"></i>
-                </span>
-                <small>NODEJS</small>
-            </div>
-            <div  class="tecnologias"> <span style="font-size: 7em; color: var(--secundary);">
-                <i class="fa-brands fa-bootstrap"></i>
-                </span>
-                <small>BOOTSTRAP</small>
-            </div>
+    <section id="about">
+        <div class="container">
+            <h2>Sobre</h2>
+            <p>Sou formando em Engenharia de Software e atuo no mercado de desenvolvimentos há um pouco mais de 2 anos. 
+                <br/> Me especializei em desenvolvimento android nativo e atuo como desenvolvedor freelancer.</p>
         </div>
+    </section>
 
-    </div>
-
-
-
-    <!-- End Section Projetos -->
-
-    <!-- Section Contato -->
-    <div class="contato" id="contato">
-        <h2>Contato</h2>
-        <div class="contato-container">
-            <h3>Envie a sua mensagem</h3>
-            <form action="https://formsubmit.co/2c9ffa1f8650981fb8c75cf36b4603f6" method="POST">
-                <div class="forms">
-                    <label for="email">E-mail</label><br>
-                    <input type="email" placeholder="Insira o seu e-mail" id="email" name="email" required>
-                </div>
-                <div class="forms">
-                    <label for="message">Mensagem</label><br>
-                    <input size="50" type="text" placeholder="Escreva a sua mensagem" id="message" name="message"
-                        required>
-                    <input type="hidden" name="_next" value="https://hermesoncostta.com.br/obrigado">
-                </div>
-                <button type="submit">Enviar</button>
-            </form>
-            <small>Retornarei a sua mensagem o mais rápido possível</small>
+    <section id="portfolio">
+        <div class="container">
+            <h2>Portfólio</h2>
+            <div class="app-card">
+                <img src="assets/tela.png" alt="App 1">
+                <h3>Drive Log</h3>
+                <p>Aplicativo para motorista que faz os lançamentos de despesas e monitora o consumo de combustível</p>
+            </div>
+            
         </div>
-    </div>
+    </section>
 
-    <!-- End Section Contato -->
-
-
-    <!-- Section Footer -->
+    <section id="contact">
+        <div class="container">
+            <h2>Contato</h2>
+            <p>Entre em contato para discutir seu próximo projeto.</p>
+            <a href="mailto:hermesoncostta9@gmail.com" class="btn">Enviar e-mail</a>
+        </div>
+    </section>
 
     <footer>
-        <div class="copyright">
-            <p>Todos os direitos reservados <strong>Hermeson Costta</strong> &copy; 2023</p>
-        </div>
-        <div class="social-media">
-            <a href="#">
-                <span style="font-size: 1.5em; color: var(--primary);">
-                    <i class="fa-brands fa-github"></i>
-                </span>
-            </a>
-            <a href="#">
-                <span style="font-size: 1.5em; color: var(--primary);">
-                    <i class="fa-brands fa-instagram"></i>
-                </span>
-            </a>
-            <a href="#">
-                <span style="font-size: 1.5em; color: var(--primary);">
-                    <i class="fa-brands fa-linkedin"></i>
-                </span>
-            </a>
-            <a href="#">
-                <span style="font-size: 1.5em; color: var(--primary);">
-                    <i class="fa-brands fa-twitter"></i>
-                </span>
-            </a>
+        <div class="container">
+            <p>&copy; 2023 Desenvolvedor Android. Todos os direitos reservados.</p>
         </div>
     </footer>
-
-    <!-- End Section Footer -->
-
-    <!-- script -->
-    <script src="https://kit.fontawesome.com/23eab126d7.js" crossorigin="anonymous"></script>
 </body>
-
 </html>
